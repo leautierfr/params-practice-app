@@ -1,7 +1,7 @@
 class ParamsController < ApplicationController
-  def show
-    phrase = params[:input]
-    render json: (phrase.upcase).as_json
+  def query
+    phrase = params["phrase"]
+    render json: { message: phrase.upcase }
   end
 
 

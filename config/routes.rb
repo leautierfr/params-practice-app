@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get "/phrase" => "params#show"
-  get "/phrase/:urlphrase" => "params#show"
-  post "/body" => "params#show"
+  get "/home" => "params#query"
+  get "/home/:phrase" => "params#query"
+  post "/home" => "params#query"
 end

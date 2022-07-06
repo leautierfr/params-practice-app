@@ -1,24 +1,6 @@
-###
-GET http://localhost:3000/phrase
+POST http://localhost:3000/home
 Content-Type: application/json
 
 {
-  "input": "hello there"
-}
-
-###
-GET http://localhost:3000/phrase/urlphrase
-Content-Type: application/json
-
-{
-  "input" : "hello there"
-}
-
-###
-
-POST http://localhost:3000/body
-Content-Type: 
-
-{
-  "input" : "hello there"
+  "phrase": "hello"
 }
